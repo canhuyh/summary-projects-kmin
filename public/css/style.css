@@ -102,6 +102,7 @@ a {
   width: 25%;
   top: 38%;
   left: 0;
+  background: black;
   border: 1px solid #000 !important;
   border-left: 0;
   border-right: 0;
@@ -112,6 +113,7 @@ a {
   width: 25%;
   top: 38%;
   right: 0;
+  background: black;
   border: 1px solid #000 !important;
   border-left: 0;
   border-right: 0;
@@ -174,6 +176,7 @@ a {
   width: 30%;
   top: 55%;
   right: 0;
+  background: #585858;
   border: 1px solid #585858 !important;
   border-left: 0;
   border-right: 0;
@@ -187,6 +190,7 @@ a {
   width: 25%;
   top: 55%;
   right: 0;
+  background: #585858;
   border: 1px solid #585858 !important;
   border-left: 0;
   border-right: 0;
@@ -200,6 +204,7 @@ a {
   width: 55%;
   top: 55%;
   right: 0;
+  background: #585858;
   border: 1px solid #585858 !important;
   border-left: 0;
   border-right: 0;
@@ -213,6 +218,7 @@ a {
   width: 3%;
   top: 55%;
   right: 0;
+  background: #585858;
   border: 1px solid #585858 !important;
   border-left: 0;
   border-right: 0;
@@ -251,6 +257,7 @@ a {
   width: 40%;
   top: 55%;
   right: 0;
+  background: #585858;
   border: 1px solid #585858 !important;
   border-left: 0;
   border-right: 0;
