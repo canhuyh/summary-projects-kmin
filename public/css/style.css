@@ -561,8 +561,7 @@ a {
 .btn-scroll-top {
   color: white;
   font-size: 30px;
-  width: fit-content;
-  height: fit-content;
+  width: 0;
   margin: auto;
   animation: pulse 2s infinite;
   transition: 0.3s;
