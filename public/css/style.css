@@ -16,7 +16,7 @@ html {
 
 body {
   background-color: black;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   margin: 0;
   cursor: default;
   width: fit-content;
