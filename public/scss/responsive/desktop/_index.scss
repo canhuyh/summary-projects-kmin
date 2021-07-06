@@ -1,0 +1,83 @@
+@media (min-width: 1025px) {
+  #portfolio {
+    .container {
+      .content {
+        width: 65%;
+
+        .intro {
+          padding: 40px;
+          .avatar {
+            top: -120px;
+            img {
+              width: 20%;
+            }
+          }
+
+          .info {
+            #position {
+              &:before {
+                width: 25%;
+                top: 38%;
+              }
+
+              &:after {
+                width: 25%;
+                top: 38%;
+              }
+            }
+          }
+        }
+
+        .contact {
+          display: flex;
+          top: -65px;
+          margin-bottom: -65px;
+        }
+
+        .group {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .education {
+          .heading {
+            &:after {
+              width: 45%;
+            }
+          }
+        }
+
+        .work-experience {
+          .heading {
+            &:after {
+              width: 40%;
+            }
+          }
+        }
+
+        .skills {
+          .heading {
+            &:after {
+              width: 65%;
+            }
+          }
+        }
+
+        .certifications {
+          .heading {
+            &:after {
+              width: 26%;
+            }
+          }
+        }
+
+        .projects {
+          .heading {
+            &:after {
+              width: 76%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

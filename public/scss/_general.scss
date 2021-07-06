@@ -1,0 +1,30 @@
+@font-face {
+  font-family: BungeeInline;
+  src: url("../font/BungeeInline-Regular.ttf");
+}
+
+@font-face {
+  font-family: BungeeOutline;
+  src: url("../font/BungeeOutline-Regular.ttf");
+}
+
+@font-face {
+  font-family: SegoeUI;
+  src: url("../font/segoe-ui-4-cufonfonts/Segoe UI.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: cursive;
+  margin: 0;
+  cursor: default;
+  width: fit-content;
+}
+
+a {
+  color: black;
+}

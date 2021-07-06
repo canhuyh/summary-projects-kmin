@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  #canhuyh {
+    height: 100vh;
+    #logo {
+      span {
+        &:nth-child(1) {
+          font-size: 100px;
+          top: 55px;
+        }
+
+        &:nth-child(2) {
+          font-size: 120px;
+        }
+      }
+    }
+
+    .welcome {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}

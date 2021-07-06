@@ -1,0 +1,19 @@
+@media (min-width: 1025px) {
+  #canhuyh {
+    #logo {
+      padding: 20px;
+      font-style: italic;
+      span {
+        &:nth-child(1) {
+          font-size: 130px;
+          position: absolute;
+          top: 88px;
+        }
+
+        &:nth-child(2) {
+          font-size: 160px;
+        }
+      }
+    }
+  }
+}

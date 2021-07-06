@@ -1,0 +1,129 @@
+@-webkit-keyframes neonlight {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes neonlight {
+  0% {
+    opacity: 0;
+  }
+  0.5% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  2.5% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+#canhuyh {
+  display: grid;
+  text-align: center;
+  padding: 20px;
+  #logo {
+    color: white;
+    text-shadow: 0 0 10px #bd2121, 0 0 30px #bd2121, 0 0 80px #bd2121,
+      0 0 20px #bd2121;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    transform: rotate(-5deg);
+
+    span {
+      &:nth-child(1) {
+        -webkit-animation: neonlight 1s;
+        animation: neonlight 8s linear infinite;
+        font-family: BungeeInline;
+        font-size: 30px;
+        position: absolute;
+        top: 15px;
+        z-index: 1;
+      }
+
+      &:nth-child(2) {
+        -webkit-animation: neonlight 1s;
+        animation: neonlight 8.05s linear infinite;
+        font-family: BungeeOutline;
+        font-size: 40px;
+      }
+    }
+  }
+
+  .welcome {
+    p {
+      color: white;
+      text-shadow: 0 0 10px #bd2121, 0 0 30px #bd2121, 0 0 80px #bd2121,
+        0 0 20px #bd2121;
+      font-size: 12px;
+    }
+  }
+}
+
+.btn-view-portfolio,
+.btn-scroll-top {
+  color: white;
+  font-size: 30px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  animation: pulse 2s infinite;
+  transition: 0.3s;
+  display: flow-root;
+
+  &:hover {
+    text-shadow: 0 0 10px #bd2121, 0 0 30px #bd2121, 0 0 80px #bd2121,
+      0 0 20px #bd2121;
+    transition: 0.3s;
+  }
+}

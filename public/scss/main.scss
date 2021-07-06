@@ -1,0 +1,10 @@
+@import "../scss/general";
+//Responsive
+@import "../scss/responsive/mobile/index";
+@import "../scss/responsive/ipad/index";
+@import "../scss/responsive/desktop/index";
+//
+@import "_col";
+@import "../scss/responsive/mobile/logo";
+@import "../scss/responsive/ipad/logo";
+@import "../scss/responsive/desktop/logo";
