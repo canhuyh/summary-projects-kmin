@@ -2,6 +2,8 @@ var track = document.getElementById("track");
 
 var controlBtn = document.getElementById("play-pause");
 
+track.play();
+
 if (track.paused) {
   controlBtn.className = "play";
 } else {
