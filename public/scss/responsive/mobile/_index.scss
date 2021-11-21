@@ -73,6 +73,7 @@
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 5px;
+            margin-top: 15px;
 
             &:before {
               content: "";
@@ -287,6 +288,18 @@
                 color: black;
               }
             }
+          }
+
+          .proj-name {
+            span {
+              background: black;
+              color: white;
+              padding: 5px 5px;
+            }
+          }
+
+          .period {
+            margin-bottom: 10px;
           }
         }
       }

@@ -10,13 +10,17 @@
   font-family: SegoeUI;
   src: url("../font/segoe-ui-4-cufonfonts/Segoe UI.ttf");
 }
+@font-face {
+  font-family: Comfortaa;
+  src: url("../font/Comfortaa/Comfortaa-Regular.ttf");
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: black;
-  font-family: sans-serif;
+  font-family: "Comfortaa";
   margin: 0;
   cursor: default;
   width: fit-content;
@@ -24,6 +28,33 @@ body {
 
 a {
   color: black;
+}
+
+span {
+  line-height: 1.5rem;
+}
+
+.download-cv {
+  text-align: center;
+}
+.download-cv .btn-download {
+  background: #fffd61;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.download-cv .btn-download a {
+  text-decoration: none;
+}
+.download-cv .btn-download:hover {
+  background: #000;
+}
+.download-cv .btn-download:hover a {
+  color: #fffd61;
 }
 
 /* width */
@@ -115,6 +146,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
+  margin-top: 15px;
 }
 #portfolio .container .content .intro .info #position:before {
   content: "";
@@ -288,12 +320,16 @@ a {
 #portfolio .container .content .projects .proj-item .description span a {
   color: black;
 }
+#portfolio .container .content .projects .proj-item .proj-name span {
+  background: black;
+  color: white;
+  padding: 5px 5px;
+}
+#portfolio .container .content .projects .proj-item .period {
+  margin-bottom: 10px;
+}
 
 @media (min-width: 768px) {
-  body {
-    font-family: cursive;
-  }
-
   #portfolio .container {
     padding: 20px;
   }
@@ -411,7 +447,7 @@ a {
 }
 @media (min-width: 1025px) {
   #portfolio .container .content {
-    width: 65%;
+    width: 80%;
   }
   #portfolio .container .content .intro {
     padding: 40px;
@@ -423,17 +459,21 @@ a {
     width: 20%;
   }
   #portfolio .container .content .intro .info #position:before {
-    width: 25%;
+    width: 30%;
     top: 38%;
   }
   #portfolio .container .content .intro .info #position:after {
-    width: 25%;
+    width: 30%;
     top: 38%;
+  }
+  #portfolio .container .content .intro .info #name {
+    font-weight: bold;
   }
   #portfolio .container .content .contact {
     display: flex;
     top: -65px;
     margin-bottom: -65px;
+    justify-content: center;
   }
   #portfolio .container .content .group {
     grid-template-columns: repeat(2, 1fr);
@@ -631,6 +671,9 @@ a {
   }
   #canhuyh #logo span:nth-child(2) {
     font-size: 160px;
+  }
+  #canhuyh .welcome {
+    margin: auto;
   }
 }
 
