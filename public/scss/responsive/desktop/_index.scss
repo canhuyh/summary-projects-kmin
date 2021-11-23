@@ -1,88 +1,132 @@
-@media (min-width: 1025px) {
-  #portfolio {
-    .container {
-      .content {
-        width: 80%;
+header {
+  padding: 25px 120px;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  font-family: ComfortaaBold;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
 
-        .intro {
-          padding: 40px;
-          .avatar {
-            top: -120px;
+header.sticky {
+  background: #00000060;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  padding: 20px 120px;
+}
+
+#banner {
+  font-family: ComfortaaBold;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../../picture/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left 60%,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+
+  .title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .welcome {
+    font-size: 25px;
+    font-family: SpaceMono;
+    text-align: center;
+  }
+}
+
+#projects {
+  padding-top: 40px;
+  .container {
+    padding: 40px 120px;
+
+    .title {
+      font-family: ComfortaaBold;
+      font-size: 25px;
+      padding-bottom: 40px;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      .projects-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        align-content: space-around;
+        justify-content: space-between;
+        width: 100%;
+        .proj-card {
+          height: 100%;
+          background: rgba(13, 17, 23, 0.9);
+          border: 1px solid #3e3e3e;
+          border-radius: $border-radius-card;
+          padding-bottom: 15px;
+
+          .thumbnail {
             img {
-              width: 20%;
+              width: 100%;
+              height: 300px;
+              border-radius: $border-radius-card;
+              object-fit: cover;
             }
           }
 
-          .info {
-            #position {
-              &:before {
-                width: 30%;
-                top: 38%;
+          .card-content {
+            padding: 10px 30px 10px 30px;
+            line-height: 2.5rem;
+            .proj-name {
+              font-family: ComfortaaBold;
+              font-size: 30px;
+            }
+
+            .period,
+            .proj-description {
+              font-family: SpaceMono;
+              color: #8b949e;
+              .buttons {
+                .btn {
+                  padding: 10px 20px;
+                  background: rgba(13, 17, 23, 0.9);
+                  border: 1px solid #3e3e3e;
+                  border-radius: 50px;
+                  transition: 0.3s ease-in-out;
+                  margin-top: 10px;
+
+                  a {
+                    font-family: SpaceMono;
+                    color: #8b949e;
+                    text-decoration: none;
+                    font-size: 15px;
+                  }
+
+                  &:hover {
+                    background: white;
+                    a {
+                      color: black;
+                    }
+                  }
+                }
               }
-
-              &:after {
-                width: 30%;
-                top: 38%;
-              }
-            }
-
-            #name {
-              font-weight: bold;
-            }
-          }
-        }
-
-        .contact {
-          display: flex;
-          top: -65px;
-          margin-bottom: -65px;
-          justify-content: center;
-        }
-
-        .group {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .education {
-          .heading {
-            &:after {
-              width: 45%;
-            }
-          }
-        }
-
-        .work-experience {
-          .heading {
-            &:after {
-              width: 40%;
-            }
-          }
-        }
-
-        .skills {
-          .heading {
-            &:after {
-              width: 65%;
-            }
-          }
-        }
-
-        .certifications {
-          .heading {
-            &:after {
-              width: 26%;
-            }
-          }
-        }
-
-        .projects {
-          .heading {
-            &:after {
-              width: 76%;
             }
           }
         }
       }
     }
   }
+}
+
+footer {
+  padding: 50px 120px;
+  text-align: center;
 }

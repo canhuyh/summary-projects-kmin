@@ -1,0 +1,14 @@
+<section id="projects">
+  <div class="container">
+    <div class="title">
+      <span>My projects</span>
+    </div>
+    <div class="main">
+      <div class="projects-list">
+        {{#each projectDB}}
+          {{>projectCard}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

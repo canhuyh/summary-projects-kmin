@@ -1,168 +1,26 @@
-@media (min-width: 768px) {
-  #portfolio {
+@media screen and (max-device-width: 1200px) and (min-device-width: 768px) {
+  header {
+    padding: 25px 40px !important;
+  }
+
+  #banner {
+    .title {
+      padding: 0 40px;
+      line-height: 6rem;
+    }
+
+    .welcome {
+      font-size: 40px !important;
+    }
+  }
+
+  #projects {
     .container {
-      padding: 20px;
-
-      .content {
-        width: 75%;
-        color: black;
-        padding: 40px 60px;
-        background: white;
-        margin: 50px auto;
-        border-radius: 50px;
-
-        .intro {
-          .avatar {
-            top: -95px;
-            img {
-              width: 30%;
-            }
-          }
-
-          .info {
-            position: relative;
-            margin-top: 40px;
-            #name {
-              font-size: 30px;
-              font-weight: bolder;
-              text-align: center;
-              text-transform: uppercase;
-              letter-spacing: 5px;
-              margin-top: 10px;
-            }
-            #position {
-              text-align: center;
-              text-transform: uppercase;
-              letter-spacing: 5px;
-
-              &:before {
-                width: 15%;
-                top: 32%;
-              }
-
-              &:after {
-                width: 15%;
-                top: 32%;
-              }
-            }
-
-            #objective {
-              font-style: italic;
-            }
-          }
-        }
-
-        .contact {
-          grid-template-columns: repeat(2, 1fr);
-          grid-column-gap: 30px;
-          grid-row-gap: 30px;
-          .contact-item {
-            display: grid;
-            text-align: center;
-            .icon {
-              i {
-                font-size: 30px;
-                border: 3px solid;
-                border-radius: 50%;
-                padding: 10px;
-                background: #fffd61;
-                width: 30px;
-                height: 30px;
-              }
-            }
-
-            span {
-              font-weight: bolder;
-            }
-          }
-        }
-
-        .group {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          grid-column-gap: 40px;
-        }
-
-        .style-1 {
-          padding-top: 20px;
-
-          .heading {
-            font-size: 40px;
-            font-weight: bold;
-            .name {
-              font-size: 20px;
-              font-weight: bold;
-            }
-          }
-
-          .item {
-            .name {
-              font-weight: bold;
-            }
-
-            .description {
-              font-weight: 100;
-            }
-          }
-        }
-
-        .education {
-          .heading {
-            &:after {
-              width: 55%;
-            }
-          }
-        }
-
-        .work-experience {
-          .heading {
-            &:after {
-              width: 50%;
-            }
-          }
-        }
-
-        .skills {
-          .heading {
-            &:after {
-              width: 70%;
-            }
-          }
-        }
-
-        .certifications {
-          .heading {
-            &:after {
-              width: 40%;
-            }
-          }
-
-          .certification-item {
-            padding-top: 25px;
-            .year {
-              font-weight: bold;
-              border: 3px solid black;
-              border-radius: 50px;
-            }
-          }
-        }
-
-        .projects {
-          .heading {
-            &:after {
-              width: 60%;
-            }
-          }
-
-          .proj-item {
-            .description {
-              span {
-                a {
-                  color: black;
-                }
-              }
-            }
-          }
+      padding: 40px 40px !important;
+      .main {
+        .projects-list {
+          grid-template-columns: repeat(2, 1fr) !important;
+          grid-gap: 60px !important;
         }
       }
     }
