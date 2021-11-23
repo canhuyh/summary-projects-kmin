@@ -1,29 +1,32 @@
 [
   {
-    "name": "Project 1",
-    "thumbnail": "",
-    "period": "2021 - 2021",
-    "description": "This is project 1",
-    "videoUrl": "google.com",
-    "sourceUrl": "google.com",
-    "liveUrl": ""
+    "name": "Chat App",
+    "course": "BACK-END WEB APPLICATION DEVELOPMENT WITH NODEJS",
+    "thumbnail": "../../picture/project-thumbnail/chat-app.png",
+    "period": "1,5 Month",
+    "description": "Chat App is a real-time chat web application written in NodeJS.",
+    "videoUrl": "https://www.youtube.com/watch?v=_WvP8XSWApY",
+    "sourceUrl": "https://github.com/canhuyh/chat-app",
+    "liveUrl": "https://huynhthanhcanh-chat-app.herokuapp.com/"
   },
   {
-    "name": "Project 2",
-    "thumbnail": "",
-    "period": "2021 - 2021",
-    "description": "This is project 2",
-    "videoUrl": "google.com",
-    "sourceUrl": "google.com",
-    "liveUrl": ""
+    "name": "Weather App",
+    "course": "BACK-END WEB APPLICATION DEVELOPMENT WITH NODEJS",
+    "thumbnail": "../../picture/project-thumbnail/weather-app.png",
+    "period": "1 Month",
+    "description": "Weather App is a web application used to view the weather written in NodeJS.",
+    "videoUrl": null,
+    "sourceUrl": "https://github.com/canhuyh/WeatherApp_WebServer",
+    "liveUrl": "https://weather-app-huynhthanhcanh.herokuapp.com/"
   },
   {
-    "name": "Project 3",
-    "thumbnail": "",
-    "period": "2021 - 2021",
-    "description": "This is project 3",
-    "videoUrl": "google.com",
-    "sourceUrl": "google.com",
-    "liveUrl": ""
+    "name": "Relationship Management Software On Console",
+    "course": "MASTER OF PROGRAMMING LANGUAGE",
+    "thumbnail": "../../picture/project-thumbnail/relationship-management.png",
+    "period": "2 Month",
+    "description": "Relationship Management Software On Console is an application used to manage relationships in your life such as friends, lovers, soulmates,... written in C++.",
+    "videoUrl": "https://www.youtube.com/watch?v=KZFdgYhhNsg",
+    "sourceUrl": "https://github.com/canhuyh/AppQuanLyMoiQuanHe-RelationshipManager",
+    "liveUrl": null
   }
 ]

@@ -1,6 +1,6 @@
 <div class="proj-card" data-aos="fade-up" data-aos-delay="500">
   <div class="thumbnail">
-    <img src="../../picture/avt.png" alt="thumbnail" />
+    <img src="{{this.thumbnail}}" alt="thumbnail" />
   </div>
 
   <div class="card-content">
@@ -12,19 +12,25 @@
     </div>
 
     <div class="proj-description">
-      <span>{{this.description}}</span>
+      <span><u><strong>Course:</strong></u> {{this.course}}</span>
+      <br />
+      <span><u><strong>Description:</strong></u> {{this.description}}</span>
       <div class="buttons">
-        <button class="btn btn-video">
-          <a href="{{this.videoUrl}}">Video demo</a>
-        </button>
+        {{#if this.videoUrl}}
+          <button class="btn btn-video">
+            <a href="{{this.videoUrl}}" target="_blank">Video demo</a>
+          </button>
+        {{/if}}
 
         <button class="btn btn-source">
-          <a href="{{this.sourceUrl}}">Source</a>
+          <a href="{{this.sourceUrl}}" target="_blank">Source</a>
         </button>
 
-        <button class="btn btn-live">
-          <a href="{{this.liveUrl}}">Live</a>
-        </button>
+        {{#if this.liveUrl}}
+          <button class="btn btn-live">
+            <a href="{{this.liveUrl}}" target="_blank">Live</a>
+          </button>
+        {{/if}}
       </div>
     </div>
   </div>

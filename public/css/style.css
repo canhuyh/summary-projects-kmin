@@ -154,7 +154,7 @@ header.sticky {
   background: url("../../../picture/background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-mask-image: -webkit-gradient(linear, left 60%, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: -webkit-gradient(linear, left 70%, left bottom, from(black), to(rgba(0, 0, 0, 0)));
 }
 #banner .title {
   font-size: 60px;
@@ -183,14 +183,11 @@ header.sticky {
 }
 #projects .container .main .projects-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  align-content: space-around;
-  justify-content: space-between;
   width: 100%;
 }
 #projects .container .main .projects-list .proj-card {
-  height: 100%;
   background: rgba(13, 17, 23, 0.9);
   border: 1px solid #3e3e3e;
   border-radius: 30px;
@@ -238,6 +235,9 @@ header.sticky {
 #projects .container .main .projects-list .proj-card .card-content .period .buttons .btn:hover a,
 #projects .container .main .projects-list .proj-card .card-content .proj-description .buttons .btn:hover a {
   color: black;
+}
+#projects .container .main .projects-list .proj-card .card-content .proj-description {
+  padding-top: 20px;
 }
 
 footer {
