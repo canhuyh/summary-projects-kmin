@@ -1,0 +1,3 @@
+[build]
+  command = "yan && yarn run build"
+  functions = "functions"

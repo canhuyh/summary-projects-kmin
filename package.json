@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node server-local.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:watch": "sass --watch public/scss/main.scss public/css/style.css"
+    "sass:watch": "sass --watch public/scss/main.scss public/css/style.css",
+    "build": "netlify-lambda build src"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "hbs": "^4.1.0",
+    "netlify-lambda": "^2.0.15",
     "request": "^2.88.2",
     "serverless-http": "^2.7.0"
   },
