@@ -1,3 +1,4 @@
+"use strict";
 const express = require("express");
 const path = require("path");
 const app = express();
@@ -39,5 +40,5 @@ router.get("/test", (req, res) => {
 
 app.use("/.netlify/functions/server", router);
 module.exports.handler = serverless(app);
-console.log("LISTENING PORT 3000");
-app.listen(process.env.PORT || 3000);
+// console.log("LISTENING PORT 3000");
+// app.listen(process.env.PORT || 3000);
