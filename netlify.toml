@@ -1,7 +1,0 @@
-[build]
-  command = "yarn && yarn run build"
-  functions = "functions"
-
-[dev]
-  command = "yarn start"
-  targetPort = 3000

@@ -5,8 +5,7 @@
   "scripts": {
     "start": "nodemon server-local.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:watch": "sass --watch public/scss/main.scss public/css/style.css",
-    "build": "netlify-lambda build src"
+    "sass:watch": "sass --watch public/scss/main.scss public/css/style.css"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +13,6 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "hbs": "^4.1.0",
-    "netlify-lambda": "^2.0.15",
     "nodemon": "^2.0.15",
     "request": "^2.88.2",
     "serverless-http": "^2.7.0"
